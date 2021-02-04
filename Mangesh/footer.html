@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Page_Footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Page Footer</title>
+    <style>
+        #footer-page {
+            width: 100%;
+            padding: 20px;
+            text-align: justify;
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        #footer {
+            width: 100%;
+            /* background-color: #f5e6e6; */
+            display: block;
+        }
+        .inner-footer {
+            width: 100%;
+            margin: auto;
+            padding: 30px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .footer-items{
+            width: 20%;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+
+        .footer-items > h5 {
+            margin: 10px 0 0 50px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-transform: capitalize;
+        }
+        ul {
+            list-style: none;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        ul > a{
+            text-decoration: none;
+            outline: none;
+            transition: 0.3s;
+            color: gray;
+        }
+        ul a:hover {
+            color: indigo;
+        }
+        ul li {
+            margin: 10px;
+            height: 25px;
+        }
+        li > i {
+            margin-right: 20px;
+        }
+        .footer-bottom {
+            padding: 3px;
+            /* background-color: seashell; */
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+        }
+        .footer-bottom > .copy {
+            /* border: 1px solid red; */
+            gap:20px;
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+        }
+        .footer-bottom > .copy > img {
+            width: 120px;
+            height: 60px;
+            /* border: 1px solid green; */
+        } 
+        .copy > h4{
+            margin-top: 10px;
+            font-size: 16px;
+            color: gray;
+            /* border: 1px solid green; */
+        }
+        .footer-bottom > .media-symbol {
+            width: 100%;
+            color: gray;
+            text-align: right;
+            /* border: 1px solid red; */
+        }
+        .copy img{
+            height: 30px;
+            margin: 5px 0px 0px 50px;
+        }
+        .media-symbol > a {
+            text-decoration: none;
+        }
+        .media-symbol > a > i {
+            /* height: 15px;
+            width: 15px; */
+            margin: 10px 5px;
+            padding: 5px;
+            color:teal;
+            border-radius: 50%;
+            /* border: 1px solid silver; */
+            transition: 0.3s;
+        }
+        .media-symbol >a> i:hover {
+            background: cornflowerblue;
+        }
+        @media screen and (max-width: 900px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .footer-items {
+                width: 100%;
+            }
+            .footer-bottom{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div id="footer-page">
+        <div id="footer">
+
+            <div class="inner-footer">
+
+                <div class="footer-items">
+                    <h5>Categories</h5>
+                    <div class="border"></div>
+                    <ul>
+                        <a href=""><li>Graphics & Design</li></a>
+                        <a href=""><li>Digital Marketing</li></a>
+                        <a href=""><li>Writing & Translation</li></a>
+                        <a href=""><li>Video & Animation</li></a>
+                        <a href=""><li>Music & Audio</li></a>
+                        <a href=""><li>Programing & Tech</li></a>
+                        <a href=""><li>Business</li></a>
+                        <a href=""><li>Lifestyle</li></a>
+                        <a href=""><li>Sitemap</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-items">
+                    <h5>About</h5>
+                    <div class="border"></div>
+                    <ul>
+                        <a href=""><li>Careers</li></a>
+                        <a href=""><li>Press & News</li></a>
+                        <a href=""><li>Patnerships</li></a>
+                        <a href=""><li>Privacy Policy</li></a>
+                        <a href=""><li>Terms of Service</li></a>
+                        <a href=""><li>Intellectual Property Claims</li></a>
+                        <a href=""><li>Investor Relations</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-items">
+                    <h5>Support</h5>
+                    <div class="border"></div>
+                    <ul>
+                        <a href=""><li>Help & Support</li></a>
+                        <a href=""><li>Trust & Safety</li></a>
+                        <a href=""><li>Selling on Fiverr</li></a>
+                        <a href=""><li>Buying on Fiverr</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-items">
+                    <h5>Community</h5>
+                    <div class="border"></div>
+                    <ul>
+                        <a href=""><li>Events</li></a>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Forum</li></a>
+                        <a href=""><li>Community Standards</li></a>
+                        <a href=""><li>Podcast</li></a>
+                        <a href=""><li>Affiliates</li></a>
+                        <a href=""><li>Invite a Friend</li></a>
+                        <a href=""><li>Become a Seller</li></a>
+                        <a href=""><li>Fiverr Elevate</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-items">
+                    <h5>More From Fiverr</h5>
+                    <div class="border"></div>
+                    <ul>
+                        <a href=""><li>Fiverr Business</li></a>
+                        <a href=""><li>Fiver Pro</li></a>
+                        <a href=""><li>Fiverr Studios</li></a>
+                        <a href=""><li>Fiverr Logo Maker</li></a>
+                        <a href=""><li>Fiver Guides</li></a>
+                        <a href=""><li>Get Inspired</li></a>
+                        <a href=""><li>Clear Voice</li></a>
+                        <a href=""><li>AND CO</li></a>
+                        <a href=""><li>Learn</li></a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <div class="copy">
+                    <div><img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrb.png" alt="fiverr"></div>
+                    <div><h4>© Fiverr International Ltd. 2021</h4></div>
+                </div>
+                <div class="media-symbol">
+                    <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-language fa-2x" aria-hidden="true">  Language</i></a>
+                    <a href=""><i class="fa fa-inr fa-2x" aria-hidden="true">  inr</i></a>
+                    <a href=""><i class="fa fa-universal-access fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
