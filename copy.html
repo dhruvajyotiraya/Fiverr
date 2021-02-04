@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Page_Footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fiverr</title>
+    <style>
+        /* top page */
+        #page1{
+            width: 100%;
+            height: 200vh;
+            font-family:  sans-serif;
+        }
+        #topMenu{
+            height: 10vh;
+            gap: 36.9vw;
+            display: flex;
+        }
+        #join{
+            height: 3.6vh;
+            width: 70px;
+            font-size: 14px;
+            margin: 17px 0px 0px 0px ;
+            background-color: transparent;
+            border-radius: 3px;
+            border: 1px solid white;
+            color: white;
+        }
+        #topMenu img{
+            height: 4.6vh;
+            margin: 13px 0px 20px 62px;
+        }
+        #topMenu a{
+            margin: 0px 5px 0px 5px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        #topMenu .navBar{
+            margin: 0px 5px 0px 5px;
+            font-size: 16px;
+            border-style: none;
+            background-color: transparent;
+            color: white;
+            font-weight: 600;
+        }
+        #bigSlide{
+            max-width: 100%;
+        }
+        #bigSlide img{
+            width: 100%;
+        }
+        #search{
+            margin: 135px 0px 0px 70px;
+            width: 44.2%;
+            height: 11.49vh;
+        }
+        #search h1{
+            font-size: 48px;
+            margin: 0px 0px 15px 0px;
+            color: white;
+        }
+        #search button{
+            font-size: 14px;
+        }
+        #searchButton{
+            margin: 0px 0px 20px 0px;
+            width: 82%;
+            height: 45px;
+            font-size: 16px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-style: none;
+        }
+        #buttonSearch{
+            margin: 0px 0px 20px 0px;
+            width: 16%;
+            height: 5.65vh;
+            color: white;
+            font-size: 16px;
+            border-style: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: #1dbf73;
+        }
+        #search .popButton1{
+            width: 28%;
+            margin: 0px 5px 0px 0px;
+        }
+        #search .popButton2{
+            width: 15%;
+            margin: 0px 5px 0px 5px;
+        }
+        #search .popButton3{
+            width: 20%px;
+            margin: 0px 5px 0px 5px;
+        }
+        #search .popButton4{
+            width: 20%;
+            margin: 0px 0px 0px 5px;
+        }
+        #search .popButton4,.popButton3,.popButton2,.popButton1{
+            height: 3.4vh;
+            border-radius: 20px;
+            background-color: transparent;
+            color: white;
+            border:1px solid white;
+        }
+        #search b{
+            color: white;
+            font-size: 14px;
+        }
+        #bigSlide{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        #partners{
+            margin-top: 40vh;
+            margin-left: -7px;
+            clear: both;
+            height: 97px;
+            width: 101%;
+            background-color: #f8f8f8;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        #partners h3{
+            margin: 37px 0px 0px 0px;
+            color: #c2c2c2;
+            font-size: 16px;
+        }
+        #partners img{
+            margin: 17px 28px 0px 28px;
+            height: 6.8vh;
+        }       
+        
+        .marketplace {
+            font-size: 35px;
+            margin: 40px;
+        }
+        
+        /* sairams page ======================================*/
+        #popProff{
+            margin: 9.5vh 0px 0px 3vw;
+            padding: 0px 0px 9.5vh 0px;
+            width: 95%;
+            overflow-x: scroll;
+        }
+        #text1{
+            display: flex;
+            text-align: left;
+            font-size: 16px;
+            width: 100%;
+            height: 5%;
+            color: #404145;
+        }
+        #space{
+            width: 200%;
+            height: 25%;
+        }
+        #scroll-right {
+            display: flex;
+            grid-gap:25px;
+            justify-content: center;
+            float: left;
+        }
+        #scroll-right > div{
+            border-radius: 3%;
+            overflow-x: auto;
+        }
+        #scroll-right img{
+            max-width: 100%;
+            min-height: 100%;
+            float: left;
+        }
+        .img{
+            position: relative;
+            text-align: left;
+            color:white;
+        }
+        .textOn_1{
+            position: absolute;
+            font-size: 14px;
+            top: 1px;
+            left: 12px;
+        }
+        .textOn_2{
+            position: absolute;
+            font-size: 24px;
+            top: 12px;
+            left: 12px;
+        }
+
+
+        /* Mangeshs page ====================================*/
+
+        #part_3 {
+            display: grid;
+            grid-gap: 25px;
+            grid-template: "content video";  
+            /* border: 1px solid red;   */
+        }
+        #part_3 {
+            width: 100%;
+            height: 57vh;
+            margin: auto;
+            padding: 7% 3%;
+            background-color: #F1FDF7;
+        }
+        #part_3 > .content {
+            width: 70%;
+            height: 100%;
+            /* border: 1px solid red; */
+            max-width: 600px;
+            max-height: 60vh;
+            grid-area: content;
+            margin-left: 1%;
+        }
+        #part_3 > .video {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            max-width: 600px;
+            max-height: 60vh;
+            grid-area: video;
+        }
+        .content > h3 {
+            font-size: 4vh;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-left: 7%;
+            color: #404145;
+        }
+        .flex > h3 {
+            /* font-size: .5vh; */
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #404145;
+        }
+        .content > p {
+            font-size: .5vh;
+            font-family: sans-serif;
+            color: #404145;
+        }
+        @media only screen and (max-width: 600px) {
+            #part_3 {
+                grid-template: "content"
+                "video";
+            }
+        }
+
+                /* Mahimas page ============================*/
+        #page4_grid {
+            display: grid;
+            width: 85%;
+            grid-template: "Graphics Marketing Translation Animation "
+                "Music Tech Business Lifestyle";
+            grid-gap: 180px;
+            margin-top: 10vh;
+            margin: auto;
+            height: 70vh;
+            justify-content: center;
+        }
+        #page4_grid h3{
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .marketplace h4{
+            margin: 0px 0px 0px 50px;
+            color: #404145;
+        }
+
+        #page4_grid img {
+            height: 50px;
+            align-items: center;
+            margin: 0px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        #page4_grid .grid1 {
+            width: 25%;
+            grid-area: Graphics;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid2 {
+            width: 25%;
+            grid-area: Marketing;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid3 {
+            width: 25%;
+            grid-area: Translation;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid4 {
+            width: 25%;
+            grid-area: Animation;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid5 {
+            grid-area: Music;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid6 {
+            grid-area: Tech;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid7 {
+            grid-area: Business;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid8 {
+            grid-area: Lifestyle;
+            padding-top: 20px;
+        }
+
+        #page4_grid h3 {
+            margin: 0px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #page4_grid .page4grid_div1_cls1 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls2 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls3 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls4 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls5 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls6 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls7 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid .page4grid_div1_cls8 {
+            background-color: grey;
+            height: 2px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+        }
+        #page4_grid>div>.hover_page4:hover {
+            background-color: green;
+            width: 100px;
+            height: 3px;
+        }
+         /* Logo maker */
+         #logoMaker{
+            position: relative;
+            width: 91%;
+            height: 35vh;
+            margin: 0vh 0px 10vh 4.5%;
+            color: white;
+            background-color: #3F63C8;
+            overflow: hidden;
+        }
+        #logoMaker img{
+            margin-top: -40px;
+            width: 100%;
+        }
+        #fiverrLogo{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .fiverrLogoMaker{
+            position: absolute;
+            top: -50px;
+            left: 80px;
+            font-size: 30px;
+        }
+        #fiverrLogo img{
+            width: 70px;
+        }
+        #logoMaker button{
+            width: 220px;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            color: #3F63C8;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        /* sairam get inspired page====================== */
+        #page_8eight{
+                width: 100%;
+                height: 500px;
+                border: 0.1px solid white;
+                background-color: #F5F5F5;
+        }
+        #page8_nav{
+            margin-top: 4%;
+            margin-left: 5%;
+        }
+        #page8_nav h1{
+            color: #404145;
+        }
+        .box_pg8{
+            width: 19%;
+            height: 60%;
+            margin-left: 5%;
+            border-radius: 5% 5% 5% 5%;
+            float: left;
+        }
+        .box-inner{
+            height: 75%;
+            width: 100%;
+        }
+        .box-inner img{
+            max-width: 100%;
+            border-radius: 2% 2% 0% 0%;
+            min-height: 100%;
+        }
+        .box-inner1{
+            height: 25%;
+            width: 100%;
+            border-radius: 0px 0px 5px 5px;
+            background-color: white;
+        }
+        .small-img{
+            height: 90%;
+            width: 18%;
+            margin-left: 20px;
+            float: left;
+        }
+        .small-img img{
+            max-width: 70%;
+            min-height: 70%;
+            border-radius: 50%;
+            margin: 5%;
+            margin-top: 20%;
+        }
+        .small-img-text{
+            height: 50%;
+            width: 70%;
+            color: #404145;
+            float: left;
+        }
+        .small-img-text1{
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            color: #95979D;
+            height: 30%;
+            width: 70%;
+            bottom: 25%;
+            float: left;
+        }
+        /* fiverr gides ===============================*/
+        #page_9{
+            width: 100%;
+            height: 500px;
+        }
+        #top-block-page9{
+            width: 90%;
+            height: 20%;
+            margin: auto;
+            margin-top: 1%;
+        }
+        #guide_text{
+            margin-top: 3%;
+            width: 50%;
+            height: 60%;
+            float: left;
+        }
+        #guide_text{
+            color: #404145;
+        }
+        #blue-arrow{
+            color: blue;
+            font-size: 18px;
+            margin-left: 19.7%;
+            height: 30%;
+            margin-top: 5%;
+            text-align: right;
+            width: 30%;
+            float: left;
+        }
+        #page9_images{
+            width: 90%;
+            height: 70%;
+            margin-top: 1.3%;
+            margin-left: 5%;
+            float: left;
+        }
+        #page9_images > div{
+            width: 31.1%;
+            height: 88%;
+            float: left;
+        }
+        #page9-image2{
+            margin-left:3%;
+        }
+        #page9-image3{
+            margin-left:3.1%;
+        }
+        .img{
+            width: 100%;
+            height: 70%;
+        }
+        .img img{
+            max-width: 100%;
+            min-height: 100%;
+        }
+        .img-text1 h3{
+            width: 100%;
+            height: 15%;
+            color: black;
+            font-size: 20px;
+            text-decoration: underline white;
+        }
+        .img-text2 h3{
+            width: 100%;
+            height: 15%;
+            position: relative;
+            bottom: 13px;
+            font-size: 17px;
+            color: gray;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: underline white;
+        }
+        .img-text3 h3{
+            width: 80%;
+            height: 15%;
+            position: relative;
+            bottom: 13px;
+            font-size: 17px;
+            color: gray;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: underline white;
+        }
+        /* Get stated button ========================*/
+        #getStarted{
+            position: relative;
+            width: 91%;
+            height: 51vh;
+            margin: 5% 0px 0px 5%;
+        }
+        #getStarted img{
+            width: 100%;
+        }
+        .getStarted{
+            position: absolute;
+            width: 50%;
+            margin-left: 5%;
+            color: white;
+            /* border: 1px solid white; */
+            font-size: 28px;
+            top:50px;
+            left: 50px;
+        }
+        .getStarted button{
+            width: 150px;
+            height: 50px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            color: white;
+            background-color: #1dbf73;
+        }
+        /*mangesh footer page==================== */
+        #footer-page {
+            width: 100%;
+            padding: 20px;
+            text-align: justify;
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        #footer {
+            width: 100%;
+            /* background-color: #f5e6e6; */
+            display: block;
+        }
+        .inner-footer {
+            width: 100%;
+            margin: auto;
+            padding: 30px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .footer-items{
+            width: 20%;
+            padding: 10px 0px;
+            box-sizing: border-box;
+        }
+
+        .footer-items > h5 {
+            margin: 10px 0 0 50px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-transform: capitalize;
+        }
+        ul {
+            list-style: none;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+        ul > a{
+            text-decoration: none;
+            outline: none;
+            transition: 0.3s;
+            color: gray;
+        }
+        ul a:hover {
+            color: indigo;
+        }
+        ul li {
+            margin: 10px;
+            height: 25px;
+        }
+        li > i {
+            margin-right: 20px;
+        }
+        .footer-bottom {
+            padding: 3px;
+            /* background-color: seashell; */
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+        }
+        .footer-bottom > .copy {
+            /* border: 1px solid red; */
+            gap:20px;
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+        }
+        .footer-bottom > .copy > img {
+            width: 120px;
+            height: 60px;
+            padding-top: 20px;
+            /* border: 1px solid green; */
+        } 
+        .copy > h4{
+            margin-top: 10px;
+            font-size: 16px;
+            color: gray;
+            /* border: 1px solid green; */
+        }
+        .footer-bottom > .media-symbol {
+            width: 100%;
+            color: gray;
+            text-align: right;
+            /* border: 1px solid red; */
+        }
+        .copy img{
+            height: 30px;
+            margin: 5px 0px 0px 50px;
+        }
+        .media-symbol > a {
+            text-decoration: none;
+        }
+        .media-symbol > a > i {
+            /* height: 15px;
+            width: 15px; */
+            margin: 10px 5px;
+            padding: 5px;
+            color:teal;
+            border-radius: 50%;
+            /* border: 1px solid silver; */
+            transition: 0.3s;
+        }
+        .media-symbol >a> i:hover {
+            background: cornflowerblue;
+        }
+        @media screen and (max-width: 900px) {
+            .footer-items {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .footer-items {
+                width: 100%;
+            }
+            .footer-bottom{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page1">
+                <!-- Top navigation Bar -->
+        <div id="topMenu">
+            <div><a href="file:///C:/Users/Mahanthi/code/project/nav_bar/top.html" title="Go to home"> <img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw.png" alt="fiver"/></a></div>
+            <div>
+                <a href="" title="Fiverr Buisness">Fiverr Buisness</a>
+                <button class="navBar">Explore</button>
+                <button class="navBar">🌐 English</button>
+                <button class="navBar">₹INR</button>
+                <a href="" title="Become a Seller">Become a Seller</a>
+                <a href="" title="Sign In">Sign In</a>
+                <a href="" title="Join"><button id="join"><b>Join</b></button></a>
+            </div>
+        </div>
+                <!-- Slide show of images -->
+        <div id="bigSlide">
+            <img class="slide" src="https://pbs.twimg.com/media/EtTmcStVgAAiZ4P?format=jpg&name=4096x4096" alt="img1">
+            <img class="slide" src="https://pbs.twimg.com/media/EtTmfOtUcAIqI8-?format=jpg&name=4096x4096" alt="img2">
+            <img class="slide" src="https://pbs.twimg.com/media/EtTmhRhVoAYe1EL?format=jpg&name=4096x4096" alt="img3">
+            <img class="slide" src="https://pbs.twimg.com/media/EtTsQBJU0AAUtj_?format=jpg&name=4096x4096" alt="img4">
+            <img class="slide" src="https://pbs.twimg.com/media/EtSxm3EVoAUVW4I?format=jpg&name=4096x4096" alt="img4">
+        </div>
+        <!-- image over search bar -->
+        <div id="search">
+            <h1>Find the perfect  
+                <span style="font-family: copperplate;">freelance</span>
+                <br> service for your business</h1>
+            <label for="searchButton" ></label>
+            <input type="text" name="search" id="searchButton" placeholder=" 🔍Try building mobile app">
+            <button id="buttonSearch">Search</button><br>
+            <div><b>Popular:</b>
+                <button class="popButton1">Web and Mobile Design</button>
+                <button class="popButton2">WordPress</button>
+                <button class="popButton3">Logo Design</button>
+                <button class="popButton4">Dropshipping</button>
+            </div>
+        </div>
+                <!-- Trusted partners images -->
+        <div id="partners">        
+            <div><h3><b>Trusted by:</b> </h3></div>
+            <div>
+                <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/facebook2x.188a797.png" alt="FB"/>
+                <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/google2x.06d74c8.png" alt="Google"/>
+                <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/netflix2x.887e47e.png" alt="Netflix"/>
+                <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/pandg2x.6dc32e4.png" alt="p&g"/>
+                <img src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal2x.22728be.png" alt="paypal"/>
+            </div>                
+        </div>
+      
+        
+         <!-- sairams page ======================================== -->
+         <div id="popProff">
+         <div id="text1"><h1>Popular professional services</h1></div>
+            <div id="space">
+            <div id="scroll-right">
+                <div class = "img">
+                    <a href=""><img  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/logo-design-2x.png" alt="Logo Design" ></a>
+                    <div class="textOn_1"><p>Bulid your brand</p></div>
+                    <div class="textOn_2"><h3>Logo Design</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png" alt="Word Press"></a>
+                    <div class="textOn_1"><p>Customize your site</p></div>
+                    <div class="textOn_2"><h3>Word Press</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png" alt="Voice Over"></a>
+                    <div class="textOn_1"><p>Share your message</p></div>
+                    <div class="textOn_2"><h3>Voice Over</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741663/animated-explainer-2x.png" alt="Video Explainer"></a>
+                    <div class="textOn_1"><p>Engage your audience</p></div>
+                    <div class="textOn_2"><h3>Video Explainer</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741667/social-2x.png" alt="Social Media"></a>
+                    <div class="textOn_1"><p>Reach more customers</p></div>
+                    <div class="textOn_2"><h3>Social Media</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741668/seo-2x.png" alt="SEO" ></a>
+                    <div class="textOn_1"><p>Unlock growth online</p></div>
+                    <div class="textOn_2"><h3>SEO</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/illustration-2x.png" alt="IIIustration"></a>
+                    <div class="textOn_1"><p>Color your dreams</p></div>
+                    <div class="textOn_2"><h3>IIIustration</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741674/translation-2x.png" alt="Translation"></a>
+                    <div class="textOn_1"><p>Go global</p></div>
+                    <div class="textOn_2"><h3>Translation</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/data-entry-2x.png" alt="Data Entry"></a>
+                    <div class="textOn_1"><p>Learn your business</p></div>
+                    <div class="textOn_2"><h3>Data Entry</h3></div>
+                </div>
+                <div class = "img">
+                    <a href=""><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/book-covers-2x.png" alt="Book Covers"></a>
+                    <div class="textOn_1"><p>Showcase your story</p></div>
+                    <div class="textOn_2"><h3>Book Covers</h3></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- mangesh page =========================================-->
+        <div id="part_3">
+            <div class="content">
+                <h3>A whole world of freelance talent at your fingertips</h3>
+                <ul class="flex">
+                        <h3><i class="fa fa-check-circle" aria-hidden="true"></i> ✔  The best for every budget</h3>
+                        <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+                        <h3><i class="fa fa-check-circle" aria-hidden="true"></i> ✔  Quality work done quickly</h3>
+                        <p>Find the right freelancer to begin working on your project within minutes.</p> 
+                        <h3><i class="fa fa-check-circle" aria-hidden="true"></i> ✔  Protected payments, every time</h3>
+                        <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+                        <h3><i class="fa fa-check-circle" aria-hidden="true"></i> ✔  24/7 support</h3>
+                        <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+             </div>
+            <div class="video">
+                <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_700,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" width="100%" height="100%">
+                    <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7" video="web/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- mahimas page ==================================-->
+        <div id="page_4">
+            <div class="marketplace">
+                <h4 >Explore the marketplace</h4>
+            </div>
+            <div id="page4_grid">
+                <div id="page4grid_id1" class="page4grid1">
+                    <img id="page4grid_imgid1"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg">
+                    <div id="page4grid_div1" class="page4grid_div1_cls1"></div>
+                    <h3 id="page4grid_h31">Graphics & Design</h3>
+                </div>
+                <div id="page4grid_id2" class="page4grid2">
+                    <img id="page4grid_imgid2"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg">
+                    <div id="page4grid_div2" class="page4grid_div1_cls2"></div>
+                    <h3 id="page4grid_h32"> Marketing</h3>
+                </div>
+                <div id="page4grid_id3" class="page4grid3"><img id="page4grid_imgid3"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                        alt="">
+                    <div id="page4grid_div3" class="page4grid_div1_cls3"></div>
+                    <h3 id="page4grid_h33">Writing & Translation</h3>
+                </div>
+                <div id="page4grid_id4" class="page4grid4"><img id="page4grid_imgid4"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                        alt="">
+                    <div id="page4grid_div4" class="page4grid_div1_cls4"></div>
+                    <h3 id="page4grid_h34"> Video & Animation</h3>
+                </div>
+                <div id="page4grid_id5" class="page4grid5"><img id="page4grid_imgid5"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                        alt="">
+                    <div id="page4grid_div5" class="page4grid_div1_cls5"></div>
+                    <h3 id="page4grid_h35"> Music & Audio</h3>
+                </div>
+                <div id="page4grid_id6" class="page4grid6"><img id="page4grid_imgid6"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                        alt="">
+                    <div id="page4grid_div6" class="page4grid_div1_cls6"></div>
+                    <h3 id="page4grid_h36"> Programming & Tech</h3>
+                </div>
+                <div id="page4grid_id7" class="page4grid7"><img id="page4grid_imgid7"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                        alt="">
+                    <div id="page4grid_div7" class="page4grid_div1_cls7"></div>
+                    <h3 id="page4grid_h37">Business</h3>
+                </div>
+                <div id="page4grid_id8" class="page4grid8"><img id="page4grid_imgid8"
+                        src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                        alt="">
+                    <div id="page4grid_div8" class="page4grid_div1_cls8"></div>
+                    <h3 id="page4grid_h38">Lifestyle</h3>
+                </div>
+            </div>
+        </div>
+        <!-- logo maker -->
+        <div id="logoMaker">
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_2.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png" alt="logo maker">
+            <div id="fiverrLogo"><img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw-1.png" alt="fiverr"><h3 class="fiverrLogoMaker">logo maker.<span style="background-color: white;border-radius: 20px;width: 580px;color:#3F63C8;font-size: 15px;padding:0px 5px 0px 5px;">BETA</span></h3>
+            <h1>Make an incredible logo<br><span style="font-family: copperplate;">in minutes</span></h1>
+            <p>Pre-designed by top talented. Just add your touch.</p>
+            <button><b>Try Fiverr Logo Maker</b></button></div>
+        </div>
+
+        <!-- sairam get inspired page8 ==============-->
+        <div id="page_8eight">
+            <div id="page8_nav" ><h1>Get inspired with projects made by our freelancers<span style="text-decoration: none;float: right;margin:1% 5% 0px 0px;font-weight: 200;font-size: 16px;color: #4A73E8;"><a style="text-decoration: none;"  href="projects">See More Projects  ></a></span></h1></div>
+            <div class="box_pg8"><a href="">
+                <div class="box-inner"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/general_assets/logged_out_homepage/assets/made_on_fiverr/vnuggz.jpg" alt="book & album covers"></div>
+                <div class="box-inner1">
+                    <div class="small-img"><img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto,w_72/attachments/profile/photo/1f9784c56c1f26ed4daa3267da631e00-1510006404185/00311c54-bbf7-41eb-b6e1-1ba71110db75.jpg" alt="by vnuggz"></div>
+                    <div class="small-img-text"><h4>Book & Album Covers</h4></div>
+                    <div class="small-img-text1"><h4>by vunggz</h4></div>
+                </div>
+            </a></div>
+            <div class="box_pg8"><a href="">
+                <div class="box-inner"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_300,dpr_1.0/general_assets/logged_out_homepage/assets/made_on_fiverr/evelinaro.png" alt="Logo Design"></div>
+                <div class="box-inner1">
+                    <div class="small-img"><img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto,w_72/profile/photos/63793134/original/File_000.jpeg" alt="by evelinaro"></div>
+                    <div class="small-img-text"><h4>Logo Design</h4></div>
+                    <div class="small-img-text1"><h4>by evelinaro</h4></div>
+               </div>
+            </a></div>
+            <div class="box_pg8"><a href="">
+                <div class="box-inner"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/general_assets/logged_out_homepage/assets/made_on_fiverr/mijalzagier.png" alt="Packing design"></div>
+                <div class="box-inner1">
+                    <div class="small-img"><img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto,w_72/attachments/profile/photo/58960b09956dc710d2d5a33573261936-1554984111113/750ccab0-8a64-4c91-b9a4-d10039dbf79c.jpg" alt="by mijalzagier"></div>
+                    <div class="small-img-text"><h4>Packaging Design</h4></div>
+                    <div class="small-img-text1"><h4>by mijalzagier</h4></div>
+                </div>
+            </a></div>
+            <div class="box_pg8"><a href="">
+                <div class="box-inner"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/general_assets/logged_out_homepage/assets/made_on_fiverr/digitalgeria.jpg" alt="Brand Style Gudies"></div>
+                <div class="box-inner1">
+                    <div class="small-img"><img src="https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto,w_72/attachments/profile/photo/58cc5b4ed4e5a4e0807d949b8a6e9329-1519478591785/1c68e3a9-f8d5-404f-b9ce-56c9fa481c2b.png" alt="by digitalgeria"></div>
+                    <div class="small-img-text"><h4>IIIustration</h4></div>
+                    <div class="small-img-text1"><h4>by dvincentgomes</h4></div>
+                </div>
+            </a></div>
+        </div>
+
+        <!-- sairams fiverr guides -->
+        <div id="page_9">
+            <div id="top-block-page9">
+                <div id="guide_text"><h1>Fiverr guides</h1></div>
+               <a href=""><div id="blue-arrow">See More Guides ></div></a>
+            </div>    
+            <div id="page9_images">
+                <div id="page9-image"><a href="">
+                    <div class="img"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560157/guide-start-online-business-552-x2.png" alt="online business"> </div>
+                    <div class="img-text1"><h3>Start an online business and work from home</h3></div>
+                    <div class="img-text2"><h3>A complete guide to starting a small business online</h3></div>
+                </a></div>
+                <div  id="page9-image2"><a href="">
+                    <div class="img"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560168/guide-digital-marketing-552-x2.png" alt="digital marketing"> </div>
+                    <div class="img-text1"><h3>Digital marketing made easy</h3></div>
+                    <div class="img-text3"><h3>A pratical guide to understand what is digital marketing</h3></div>
+                </a></div>
+                <div  id="page9-image3"><a href="">
+                    <div class="img"><img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_450,dpr_1.0/v1/attachments/generic_asset/asset/d532c0ad4feed007b3899cebad595286-1599611560155/guide-create-a-logo-552-x2.png" alt="Logo Create"> </div>
+                    <div class="img-text1"><h3>Create a logo for business</h3></div>
+                    <div class="img-text3"><h3>A step-by-step guide to create a memorable business logo</h3></div>
+                </a></div>
+            </div>
+            </div>
+        <!-- get started -->
+        <div id="getStarted">
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_2.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608129/bg-signup-1400-x2.png" alt="get started">
+            <div class="getStarted"><h1>Find the <span style="font-family: copperplate;">talent</span> needed to get your business <span style="font-family: copperplate;">growing.</span></h1>
+            <button><b>Get Started</b></button></div>
+        </div>
+        
+
+        <!-- Footer page ============================ -->
+        <hr>
+        <div id="footer-page">
+            <div id="footer">
+
+                <div class="inner-footer">
+
+                    <div class="footer-items">
+                        <h5>Categories</h5>
+                        <div class="border"></div>
+                        <ul>
+                            <a href=""><li>Graphics & Design</li></a>
+                            <a href=""><li>Digital Marketing</li></a>
+                            <a href=""><li>Writing & Translation</li></a>
+                            <a href=""><li>Video & Animation</li></a>
+                            <a href=""><li>Music & Audio</li></a>
+                            <a href=""><li>Programing & Tech</li></a>
+                            <a href=""><li>Business</li></a>
+                            <a href=""><li>Lifestyle</li></a>
+                            <a href=""><li>Sitemap</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-items">
+                        <h5>About</h5>
+                        <div class="border"></div>
+                        <ul>
+                            <a href=""><li>Careers</li></a>
+                            <a href=""><li>Press & News</li></a>
+                            <a href=""><li>Patnerships</li></a>
+                            <a href=""><li>Privacy Policy</li></a>
+                            <a href=""><li>Terms of Service</li></a>
+                            <a href=""><li>Intellectual Property Claims</li></a>
+                            <a href=""><li>Investor Relations</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-items">
+                        <h5>Support</h5>
+                        <div class="border"></div>
+                        <ul>
+                            <a href=""><li>Help & Support</li></a>
+                            <a href=""><li>Trust & Safety</li></a>
+                            <a href=""><li>Selling on Fiverr</li></a>
+                            <a href=""><li>Buying on Fiverr</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-items">
+                        <h5>Community</h5>
+                        <div class="border"></div>
+                        <ul>
+                            <a href=""><li>Events</li></a>
+                            <a href=""><li>Blog</li></a>
+                            <a href=""><li>Forum</li></a>
+                            <a href=""><li>Community Standards</li></a>
+                            <a href=""><li>Podcast</li></a>
+                            <a href=""><li>Affiliates</li></a>
+                            <a href=""><li>Invite a Friend</li></a>
+                            <a href=""><li>Become a Seller</li></a>
+                            <a href=""><li>Fiverr Elevate</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-items">
+                        <h5>More From Fiverr</h5>
+                        <div class="border"></div>
+                        <ul>
+                            <a href=""><li>Fiverr Business</li></a>
+                            <a href=""><li>Fiver Pro</li></a>
+                            <a href=""><li>Fiverr Studios</li></a>
+                            <a href=""><li>Fiverr Logo Maker</li></a>
+                            <a href=""><li>Fiver Guides</li></a>
+                            <a href=""><li>Get Inspired</li></a>
+                            <a href=""><li>Clear Voice</li></a>
+                            <a href=""><li>AND CO</li></a>
+                            <a href=""><li>Learn</li></a>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+
+            <div class="footer-bottom">
+                <div class="copy">
+                    <div><img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrb.png" alt="fiverr"></div>
+                    <div><h4>© Fiverr International Ltd. 2021</h4></div>
+                </div>
+                <div class="media-symbol">
+                    <a href=""><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-language fa-2x" aria-hidden="true">  Language</i></a>
+                    <a href=""><i class="fa fa-inr fa-2x" aria-hidden="true">  inr</i></a>
+                    <a href=""><i class="fa fa-universal-access fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+    <script>
+        var myIndex = 0;
+        slideShow();
+
+        function slideShow() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(slideShow, 2000); // Change image every 2 seconds
+        }
+        
+        // mahimas code====================================
+
+        // var hover_1 = document.getElementsByClassName("grid1");
+        var imgpage4grid1 = document.getElementById("page4grid_imgid1");
+        var divpage4grid1 = document.getElementById("page4grid_div1");
+        var h3page4grid1 = document.getElementById("page4grid_h31");
+
+        function hover1() {
+            divpage4grid1.style.backgroundColor = "green";
+            divpage4grid1.style.width = "120px";
+
+        }
+        function hover_out1() {
+            divpage4grid1.style.backgroundColor = "grey";
+            divpage4grid1.style.width = "50px";
+
+        }
+        imgpage4grid1.addEventListener("mouseover", hover1);
+        divpage4grid1.addEventListener("mouseover", hover1);
+        h3page4grid1.addEventListener("mouseover", hover1);
+        imgpage4grid1.addEventListener("mouseout", hover_out1);
+        divpage4grid1.addEventListener("mouseout", hover_out1);
+        h3page4grid1.addEventListener("mouseout", hover_out1);
+
+        //2nd
+        var imgpage4grid2 = document.getElementById("page4grid_imgid2");
+        var divpage4grid2 = document.getElementById("page4grid_div2");
+        var h3page4grid2 = document.getElementById("page4grid_h32");
+
+        function hover2() {
+            divpage4grid2.style.backgroundColor = "green";
+            divpage4grid2.style.width = "120px";
+
+        }
+        function hover_out2() {
+            divpage4grid2.style.backgroundColor = "grey";
+            divpage4grid2.style.width = "50px";
+
+        }
+        imgpage4grid2.addEventListener("mouseover", hover2);
+        divpage4grid2.addEventListener("mouseover", hover2);
+        h3page4grid2.addEventListener("mouseover", hover2);
+        imgpage4grid2.addEventListener("mouseout", hover_out2);
+        divpage4grid2.addEventListener("mouseout", hover_out2);
+        h3page4grid2.addEventListener("mouseout", hover_out2);
+
+        var imgpage4grid3 = document.getElementById("page4grid_imgid3");
+        var divpage4grid3 = document.getElementById("page4grid_div3");
+        var h3page4grid3 = document.getElementById("page4grid_h33");
+
+        function hover3() {
+            divpage4grid3.style.backgroundColor = "green";
+            divpage4grid3.style.width = "120px";
+
+        }
+        function hover_out3() {
+            divpage4grid3.style.backgroundColor = "grey";
+            divpage4grid3.style.width = "50px";
+
+        }
+        imgpage4grid3.addEventListener("mouseover", hover3);
+        divpage4grid3.addEventListener("mouseover", hover3);
+        h3page4grid3.addEventListener("mouseover", hover3);
+        imgpage4grid3.addEventListener("mouseout", hover_out3);
+        divpage4grid3.addEventListener("mouseout", hover_out3);
+        h3page4grid3.addEventListener("mouseout", hover_out3);
+
+
+
+
+        var imgpage4grid4 = document.getElementById("page4grid_imgid4");
+        var divpage4grid4 = document.getElementById("page4grid_div4");
+        var h3page4grid4 = document.getElementById("page4grid_h34");
+
+        function hover4() {
+            divpage4grid4.style.backgroundColor = "green";
+            divpage4grid4.style.width = "120px";
+
+        }
+        function hover_out4() {
+            divpage4grid4.style.backgroundColor = "grey";
+            divpage4grid4.style.width = "50px";
+
+        }
+        imgpage4grid4.addEventListener("mouseover", hover4);
+        divpage4grid4.addEventListener("mouseover", hover4);
+        h3page4grid4.addEventListener("mouseover", hover4);
+        imgpage4grid4.addEventListener("mouseout", hover_out4);
+        divpage4grid4.addEventListener("mouseout", hover_out4);
+        h3page4grid4.addEventListener("mouseout", hover_out4);
+
+
+        var imgpage4grid5 = document.getElementById("page4grid_imgid5");
+        var divpage4grid5 = document.getElementById("page4grid_div5");
+        var h3page4grid5 = document.getElementById("page4grid_h35");
+
+        function hover5() {
+            divpage4grid5.style.backgroundColor = "green";
+            divpage4grid5.style.width = "120px";
+
+        }
+        function hover_out5() {
+            divpage4grid5.style.backgroundColor = "grey";
+            divpage4grid5.style.width = "50px";
+
+        }
+        imgpage4grid5.addEventListener("mouseover", hover5);
+        divpage4grid5.addEventListener("mouseover", hover5);
+        h3page4grid5.addEventListener("mouseover", hover5);
+        imgpage4grid5.addEventListener("mouseout", hover_out5);
+        divpage4grid5.addEventListener("mouseout", hover_out5);
+        h3page4grid5.addEventListener("mouseout", hover_out5);
+
+
+        var imgpage4grid6 = document.getElementById("page4grid_imgid6");
+        var divpage4grid6 = document.getElementById("page4grid_div6");
+        var h3page4grid6 = document.getElementById("page4grid_h36");
+
+        function hover6() {
+            divpage4grid6.style.backgroundColor = "green";
+            divpage4grid6.style.width = "120px";
+
+        }
+        function hover_out6() {
+            divpage4grid6.style.backgroundColor = "grey";
+            divpage4grid6.style.width = "50px";
+
+        }
+        imgpage4grid6.addEventListener("mouseover", hover6);
+        divpage4grid6.addEventListener("mouseover", hover6);
+        h3page4grid6.addEventListener("mouseover", hover6);
+        imgpage4grid6.addEventListener("mouseout", hover_out6);
+        divpage4grid6.addEventListener("mouseout", hover_out6);
+        h3page4grid6.addEventListener("mouseout", hover_out6);
+
+
+        var imgpage4grid7 = document.getElementById("page4grid_imgid7");
+        var divpage4grid7 = document.getElementById("page4grid_div7");
+        var h3page4grid7= document.getElementById("page4grid_h37");
+
+        function hover7() {
+            divpage4grid7.style.backgroundColor = "green";
+            divpage4grid7.style.width = "120px";
+
+        }
+        function hover_out7() {
+            divpage4grid7.style.backgroundColor = "grey";
+            divpage4grid7.style.width = "50px";
+
+        }
+        imgpage4grid7.addEventListener("mouseover", hover7);
+        divpage4grid7.addEventListener("mouseover", hover7);
+        h3page4grid7.addEventListener("mouseover", hover7);
+        imgpage4grid7.addEventListener("mouseout", hover_out7);
+        divpage4grid7.addEventListener("mouseout", hover_out7);
+        h3page4grid7.addEventListener("mouseout", hover_out7);
+
+        var imgpage4grid8 = document.getElementById("page4grid_imgid8");
+        var divpage4grid8 = document.getElementById("page4grid_div8");
+        var h3page4grid8 = document.getElementById("page4grid_h38");
+
+        function hover8() {
+            divpage4grid8.style.backgroundColor = "green";
+            divpage4grid8.style.width = "120px";
+
+        }
+        function hover_out8() {
+            divpage4grid8.style.backgroundColor = "grey";
+            divpage4grid8.style.width = "50px";
+
+        }
+        imgpage4grid8.addEventListener("mouseover", hover8);
+        divpage4grid8.addEventListener("mouseover", hover8);
+        h3page4grid8.addEventListener("mouseover", hover8);
+        imgpage4grid8.addEventListener("mouseout", hover_out8);
+        divpage4grid8.addEventListener("mouseout", hover_out8);
+        h3page4grid8.addEventListener("mouseout", hover_out8);
+
+    </script>
+    
+</body>
+</html>
