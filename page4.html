@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marketplace {
+            font-size: 35px;
+            margin: 40px;
+        }
+
+        #page4_grid {
+            display: grid;
+            width: 85%;
+            grid-template: "Graphics Marketing Translation Animation "
+                "Music Tech Business Lifestyle";
+            grid-gap: 10px;
+            margin: auto;
+            height: 70vh;
+
+
+        }
+
+        #page4_grid img {
+            width: 80px;
+            height: 60px;
+            align-items: center;
+            margin: 0px 90px;
+        }
+
+        #page4_grid .grid1 {
+            grid-area: Graphics;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid2 {
+            grid-area: Marketing;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid3 {
+            grid-area: Translation;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid4 {
+            grid-area: Animation;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid5 {
+            grid-area: Music;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid6 {
+            grid-area: Tech;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid7 {
+            grid-area: Business;
+            padding-top: 20px;
+        }
+
+        #page4_grid .grid8 {
+            grid-area: Lifestyle;
+            padding-top: 20px;
+        }
+
+        #page4_grid h3 {
+            margin: 0px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #page4_grid .hover_page4 {
+            background-color: grey;
+            height: 2px;
+            width: 45px;
+            margin: auto
+        }
+
+        #page4_grid>div>.hover_page4:hover {
+            background-color: green;
+            width: 100px;
+            height: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page_4">
+        <div class="marketplace">
+            <h4>Explore the marketplace</h4>
+        </div>
+        <div id="page4_grid">
+            <div id="page4grid_id1" class="page4grid1">
+                <img id="page4grid_imgid1"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/graphics-design.d32a2f8.svg">
+                <div id="page4grid_div1" class="page4grid_div1_cls1"></div>
+                <h3 id="page4grid_h31">Graphics & Design</h3>
+            </div>
+            <div id="page4grid_id2" class="page4grid2">
+                <img id="page4grid_imgid2"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/online-marketing.74e221b.svg">
+                <div id="page4grid_div2" class="page4grid_div1_cls2"></div>
+                <h3 id="page4grid_h32"> Marketing</h3>
+            </div>
+            <div id="page4grid_id3" class="page4grid3"><img id="page4grid_imgid3"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/writing-translation.32ebe2e.svg"
+                    alt="">
+                <div id="page4grid_div3" class="page4grid_div1_cls3"></div>
+                <h3 id="page4grid_h33">Writing & Translation</h3>
+            </div>
+            <div id="page4grid_id4" class="page4grid4"><img id="page4grid_imgid4"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/video-animation.f0d9d71.svg"
+                    alt="">
+                <div id="page4grid_div4" class="page4grid_div1_cls4"></div>
+                <h3 id="page4grid_h34"> Video & Animation</h3>
+            </div>
+            <div id="page4grid_id5" class="page4grid5"><img id="page4grid_imgid5"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/music-audio.320af20.svg"
+                    alt="">
+                <div id="page4grid_div5" class="page4grid_div1_cls5"></div>
+                <h3 id="page4grid_h35"> Music & Audio</h3>
+            </div>
+            <div id="page4grid_id6" class="page4grid6"><img id="page4grid_imgid6"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/programming.9362366.svg"
+                    alt="">
+                <div id="page4grid_div6" class="page4grid_div1_cls"></div>
+                <h3 id="page4grid_h36"> Programming & Tech</h3>
+            </div>
+            <div id="page4grid_id7" class="page4grid7"><img id="page4grid_imgid7"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/business.bbdf319.svg"
+                    alt="">
+                <div id="page4grid_div7" class="page4grid_div1_cls7"></div>
+                <h3 id="page4grid_h37">Business</h3>
+            </div>
+            <div id="page4grid_id8" class="page4grid8"><img id="page4grid_imgid8"
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lifestyle.745b575.svg"
+                    alt="">
+                <div id="page4grid_div8" class="page4grid_div1_cls8"></div>
+                <h3 id="page4grid_h38">Lifestyle</h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // var hover_1 = document.getElementsByClassName("grid1");
+        var imgpage4grid1 = document.getElementById("page4grid_imgid1");
+        var divpage4grid1 = document.getElementById("page4grid_div1");
+        var h3page4grid1 = document.getElementById("page4grid_h31");
+
+        function hover() {
+            div1.style.backgroundColor = "green";
+            div1.style.width = "120px";
+
+        }
+        function hover_out() {
+            div1.style.backgroundColor = "grey";
+            div1.style.width = "50px";
+
+        }
+        page4grid_imgid1.addEventListener("mouseover", hover);
+        page4grid_h31.addEventListener("mouseover", hover);
+        page4grid_div1.addEventListener("mouseover", hover);
+        imgpage4grid1.addEventListener("mouseout", hover_out);
+        divpage4grid1.addEventListener("mouseout", hover_out);
+        h3page4grid1.addEventListener("mouseout", hover_out);
+
+    </script>
+
+</body>
+
+</html>
