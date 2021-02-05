@@ -93,6 +93,20 @@
      text-decoration: none;
      cursor: pointer;
  }
+ 
+ .clos {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .clos:hover,
+ .clos:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
  /*popup end  */
  
  #bigSlide {
