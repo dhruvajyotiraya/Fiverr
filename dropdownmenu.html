@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Page_Footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dmenu</title>
+    <style>
+        #Dmenu {
+            /* background-size: cover;
+            background-position: center; */
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .menu_bar {
+            text-align: center;
+        }
+        .menu_bar ul {
+            display: flex;
+            list-style: none;
+            color: #fff;
+        }
+        .menu_bar ul li {
+            width: 10vw;
+            margin: .5% auto;
+            padding: .5%;
+        }
+        .menu_bar ul li a {
+            text-decoration: grey;
+            color: grey;
+        }
+        .active, .menu_bar ul li:hover {
+            background-color: rgb(153, 233, 200);
+            border-radius: 6%;
+        }
+        .smenu1 {
+            display: none;
+        }
+        .menu_bar ul li:hover .smenu1{
+            display: block;
+            position: absolute;
+            background: rgb(188, 206, 233);
+            margin: .5% 0 0 -.5%;
+        }
+        .menu_bar ul li:hover .smenu1 ul{
+            display: block;
+            margin: .5%;
+        }
+        .menu_bar ul li:hover .smenu1 ul li{
+            width: 10vw;
+            padding: 3.5%;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            text-align: left;
+        }
+        .menu_bar ul li:hover .smenu1 ul li:last-child {
+            border-bottom: none;
+        }
+        .menu_bar ul li:hover .smenu1 ul li a {
+            color: grey;
+        }
+        .fa-angle-right {
+            float: right;
+        }
+        .smenu2 {
+            display: none;
+        }
+        .hover-me:hover .smenu2 {
+            display: block;
+            position: absolute;
+            margin: -20% 0 0 75%;
+            background: rgb(188, 206, 233);
+        }
+    </style>
+</head>
+<body>
+    <div id="Dmenu">
+        <div class="menu_bar">
+            <ul>
+                <li class="active"><a href = "#" >Graphics & Design</a>
+                <div class="smenu1">
+                    <ul>
+                        <li class="hover-me"><a href="#">Logo & Brand Identity</a><i class="fa fa-angle-right"></i>
+                        
+                        <div class="smenu2">
+                            <ul>
+                                <li><a href="#">Logo Design</a></li>
+                                <li><a href="#">Brand Style Guides</a></li>
+                                <li><a href="#">Business Cards & Stationary</a></li>
+                            </ul>
+                        </div>
+                        
+                        </li>
+                        <li class="hover-me"><a href="#">Gaming<i class="fa fa-angle-right"></i></a>
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Game Art</a></li>
+                                    <li><a href="#">Graphics for Streamers</a></li>
+                                    <li><a href="#">Twitch Store</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="hover-me"><a href="#">Art & Illustration<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Illustration</a></li>
+                                    <li><a href="#">Pattern Design</a></li>
+                                    <li><a href="#">Portrait & Caricatures</a></li>
+                                    <li><a href="#">Cartoons & Comics</a></li>
+                                    <li><a href="#">Tatto Design</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="hover-me"><a href="#">Visual Design<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Photoshop Editing</a></li>
+                                    <li><a href="#">Presentation Design</a></li>
+                                    <li><a href="#">Infographic Design</a></li>
+                                    <li><a href="#">Vector Tracing</a></li>
+                                    <li><a href="#">Resume Design</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="hover-me"><a href="#">Packing & Labels<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Book Design</a></li>
+                                    <li><a href="#">Album Cover Design</a></li>
+                                    <li><a href="#">Podcast Cover Art</a></li>
+                                    <li><a href="#">Packing Design</a></li>
+                                    <li><a href="#">Car Wraps</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Web & Mobile<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Web & Mobile Design</a></li>
+                                    <li><a href="#">Social Media Design</a></li>
+                                    <li><a href="#">AR Filters & Lenses</a></li>
+                                    <li><a href="#">Web Banners</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Architecture & Building Design<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Architecture & Interior Design</a></li>
+                                    <li><a href="#">Landscape Design</a></li>
+                                    <li><a href="#">Bulding Information Modeling</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="hover-me"><a href="#">Fashion & Merchandise<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Fashion Design</a></li>
+                                    <li><a href="#">T-Shirt & Merchandise</a></li>
+                                    <li><a href="#">Jewelry Design</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="hover-me"><a href="#">Print Design<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Flyer Design</a></li>
+                                    <li><a href="#">Brochure Design</a></li>
+                                    <li><a href="#">Signage Design</a></li>
+                                    <li><a href="#">Poster Design</a></li>
+                                    <li><a href="#">Catalog Design</a></li>
+                                    <li><a href="#">Menu Design</a></li>
+                                    <li><a href="#">Postcard Design</a></li>
+                                    <li><a href="#">Invitation Design</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li class="hover-me"><a href="#">Product & Character Design<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Industrial & Product Design</a></li>
+                                    <li><a href="#">Character Modeling</a></li>
+                                    <li><a href="#">Trade Booth Design</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="hover-me"><a href="#">Misc.<i class="fa fa-angle-right"></i></a>
+                        
+                            <div class="smenu2">
+                                <ul>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                
+                </li>
+                <li><a href = "#" >Digital Marketing</a>
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Social Media Marketing</a></li>
+                            <li><a href="#">Social Media Advertising</a></li>
+                            <li><a href="#">SEO</a></li>
+                            <li><a href="#">Local SEO</a></li>
+                            <li><a href="#">Marketing Strategy</a></li>
+                            <li><a href="#">Public Relations</a></li>
+                            <li><a href="#">Content Marketing</a></li>
+                            <li><a href="#">Video Marketing</a></li>
+                            <li><a href="#">Email Marketing</a></li>
+                            <li><a href="#">SEM</a></li>
+                            <li><a href="#">Display Advertising</a></li>
+                            <li><a href="#">Community Management</a></li>
+                            <li><a href="#">E-Commerce Marketing</a></li>
+                            <li><a href="#">Influencer Marketing</a></li>
+                            <li><a href="#">Crowdfunding</a></li>
+                            <li><a href="#">Web Analysis</a></li>
+                            <li><a href="#">Domain Research</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><a href = "#" >Writing & Translation</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Articles & Blog Posts</a></li>
+                            <li><a href="#">Translation</a></li>
+                            <li><a href="#">Proofreading & Editing</a></li>
+                            <li><a href="#">Resume Writing</a></li>
+                            <li><a href="#">Cover Letters</a></li>
+                            <li><a href="#">Linkedin Profile</a></li>
+                            <li><a href="#">Ad Copy</a></li>
+                            <li><a href="#">Sales Copy</a></li>
+                            <li><a href="#">Social Media Copy</a></li>
+                            <li><a href="#">Email Copy</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Book & eBook Writing</a></li>
+                            <li><a href="#">E-Commerce Marketing</a></li>
+                            <li><a href="#">Book Editing</a></li>
+                            <li><a href="#">Scriptwriting</a></li>
+                            <li><a href="#">Podcast Writing</a></li>
+                            <li><a href="#">Beta Reading</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><a href = "#" >Video & Animation</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Whiteboard & Animated Explainers</a></li>
+                            <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Short Video Link</a></li>
+                            <li><a href="#">Lyric & Music Videos</a></li>
+                            <li><a href="#">Charecter Animation</a></li>
+                            <li><a href="#">Logo Animation</a></li>
+                            <li><a href="#">Animated GIFs</a></li>
+                            <li><a href="#">Apps & Websites Previews</a></li>
+                            <li><a href="#">Subtitles & Captions</a></li>
+                            <li><a href="#">Lottie & Website Animation</a></li>
+                            <li><a href="#">Spokesperson Videos</a></li>
+                            <li><a href="#">Live Action Explainers</a></li>
+                            <li><a href="#">3D Product Animation</a></li>
+                            <li><a href="#">Visual Effects</a></li>
+                            <li><a href="#">Unboxing Videos</a></li>
+                            <li><a href="#">Slideshow Videos</a></li>
+                            <li><a href="#">eLearning Video Production</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><a href = "#" >Music & Audio</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Voice Over</a></li>
+                            <li><a href="#">Producers & Composers</a></li>
+                            <li><a href="#">Singers & Vocalists</a></li>
+                            <li><a href="#">Mixing & Mastering</a></li>
+                            <li><a href="#">Session Musicians</a></li>
+                            <li><a href="#">Podcast Editing</a></li>
+                            <li><a href="#">Songwriters</a></li>
+                            <li><a href="#">Beat Making</a></li>
+                            <li><a href="#">Audiobook Production</a></li>
+                            <li><a href="#">Audio Ads Production</a></li>
+                            <li><a href="#">Sound Design</a></li>
+                            <li><a href="#">Jingles & Intros</a></li>
+                            <li><a href="#">Dialogue Editing</a></li>
+                            <li><a href="#">Music Transcription</a></li>
+                            <li><a href="#">Vocal Tuning</a></li>
+                            <li><a href="#">DJ Drops & Tags</a></li>
+                            <li><a href="#">DJ Mixing</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><a href = "#" >Programming & Tech</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Website Builders & CMS</a></li>
+                            <li><a href="#">Game Development</a></li>
+                            <li><a href="#">Development for Streamers</a></li>
+                            <li><a href="#">Web Programing</a></li>
+                            <li><a href="#">E-Commerce Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Desktop Applications</a></li>
+                            <li><a href="#">Support & IT</a></li>
+                            <li><a href="#">Chatbots</a></li>
+                            <li><a href="#">Online Coding Lessons</a></li>
+                            <li><a href="#">Cybersecurity & Data Protection</a></li>
+                            <li><a href="#">Data Analysis & Report</a></li>
+                            <li><a href="#">Converts Files</a></li>
+                            <li><a href="#">Databases</a></li>
+                            <li><a href="#">User Testing</a></li>
+                            <li><a href="#">QA & Review</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>    
+                
+                </li>
+                <li><a href = "#" >Business</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Virtual Assistant</a></li>
+                            <li><a href="#">Data Entry</a></li>
+                            <li><a href="#">Market Research</a></li>
+                            <li><a href="#">Project Management</a></li>
+                            <li><a href="#">Business Consulting</a></li>
+                            <li><a href="#">Business Consulting</a></li>
+                            <li><a href="#">Business Plans</a></li>
+                            <li><a href="#">Presentations</a></li>
+                            <li><a href="#">Lead Generation</a></li>
+                            <li><a href="#">Game Concept Design</a></li>
+                            <li><a href="#">Legal Consulting</a></li>
+                            <li><a href="#">Financial Consulting</a></li>
+                            <li><a href="#">E-Commerce Management</a></li>
+                            <li><a href="#">Supply Chain Management</a></li>
+                            <li><a href="#">HR Consulting</a></li>
+                            <li><a href="#">Career Consulting</a></li>
+                            <li><a href="#">Branding Services</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+                <li><a href = "#" >Lifestyle</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Online Tutoring</a></li>
+                            <li><a href="#">Astrology & Psychics</a></li>
+                            <li><a href="#">Greeting Cards & Videos</a></li>
+                            <li><a href="#">Life Coaching</a></li>
+                            <li><a href="#">Fitness Lessons</a></li>
+                            <li><a href="#">Personal Stylists</a></li>
+                            <li><a href="#">Cooking Lessons</a></li>
+                            <li><a href="#">Craft Lessons</a></li>
+                            <li><a href="#">Art & Crafts</a></li>
+                            <li><a href="#">Health, Nutrition & Fitness</a></li>
+                            <li><a href="#">Family & Genealogy</a></li>
+                            <li><a href="#">Your Message on...</a></li>
+                            <li><a href="#">Viral Videos</a></li>
+                            <li><a href="#">Celebrity Impersonators</a></li>
+                            <li><a href="#">Collectibles</a></li>
+                            <li><a href="#">Traveling</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href = "#" >Industries</a>
+                
+                    <div class="smenu1">
+                        <ul>
+                            <li ><a href="#">Fashion</a></i>
+                            
+                                <!-- <div class="smenu2">
+                                    <ul>
+                                        <li><a href="#">Others</a></li>
+                                    </ul>
+                                </div> -->
+                            
+                            </li>
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">E-Commerce</a></li>
+                            <li><a href="#">Book & eBook Publishing</a></li>
+                            <li><a href="#">Podcasting</a></li>
+                            <li><a href="#">Influencers</a></li>
+                            <li><a href="#">Architecture</a></li>
+                            <li><a href="#">Real Estate</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
