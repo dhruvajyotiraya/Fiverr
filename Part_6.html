@@ -62,7 +62,7 @@
 		 	/* font-size: 20px; */
 		 	color: gray;
 		 	position: absolute;
-		 	top:40%;
+		 	top:35%;
 		 	cursor: pointer;
 		 }
 
@@ -104,7 +104,7 @@
         </div>
 
 
-        <!-- <div class="Part_6" class="b">
+        <div class="Part_6" class="b">
         
             <div class="Part_6_video">
                     <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg" width="100%" height="100%">
@@ -117,10 +117,10 @@
                 </h5>
                 <i>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally everything. It was like working with a human right next to you versus being across the world."</i>
             </div>
-        </div> -->
+        </div>
 
 
-        <!-- <div class="Part_6" class="c">
+        <div class="Part_6" class="c">
         
             <div class="Part_6_video">
                     <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg" width="100%" height="100%">
@@ -134,9 +134,9 @@
                 <i>"We've used Fiverr for Shopify web development, graphic design, and backend web development. Working with Fiverr makes my job a little easier every day."</i>
             </div>
         </div>
-        <div class="Part_6"> -->
+        <div class="Part_6">
         
-            <!-- <div class="Part_6_video" class="d">
+            <div class="Part_6_video" class="d">
                     <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173399/testimonial-video-still-rooted.jpg" width="100%" height="100%">
                         <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw" video="web/mp4">
                     </video>
@@ -147,29 +147,29 @@
                 </h5>
                 <i>"It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."</i>
             </div>
-        </div> -->
+        </div>
             <button class="previous" onclick="plusDivs(-1)">&#10094;</button>
             <button class="next" onclick="plusDivs(1)">&#10095;</button>
     </div>
     <script type="text/javascript">
 
-        // var slideIndex = 1;
-        // showDivs(slideIndex);
+        var slideIndex = 1;
+        showDivs(slideIndex);
         
-        // function plusDivs(n) {
-        //   showDivs(slideIndex += n);
-        // }
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
         
-        // function showDivs(n) {
-        //   var i;
-        //   var x = document.getElementsByClassName("Part_6");
-        //   if (n > x.length) {slideIndex = 1}
-        //   if (n < 1) {slideIndex = x.length}
-        //   for (i = 0; i < x.length; i++) {
-        //      x[i].style.display = "none";  
-        //   }
-        //   x[slideIndex-1].style.display = "block";  
-        // }
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("Part_6");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "flex";  
+        }
 
         </script>
 </body>
