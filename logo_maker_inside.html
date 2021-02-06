@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+             #bigSlides{
+            max-width: 100%;
+        }
+        #bigSlides img{
+            width: 100%;
+        }
+        #bigSlides{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        #logo_maker_block{
+            width: 95%;
+            height: 830px;
+            position: absolute;
+            left: 3%;
+        }
+        #logo_maker_block1{
+            height: 5%;
+            width: 100%;
+        }
+        #logo_maker_fiverr_img{
+            height: 55%;
+            width: 7%;
+            position: relative;
+            float: left;
+            top: 48%;
+        }
+        #logo_maker_fiverr_img img{
+            min-width: 100%;
+            max-height: 100%;
+        }
+        #logo_maker_text{
+            width: 10%;
+            height: 100%;
+            font-family:  sans-serif;
+            font-size: 27px;
+            position: relative;
+            bottom: 35%;
+            left: 0.4%;
+            float: left;
+            color: white;
+        }
+        .new_blue_beta{
+                color: white;
+                float: left;
+                margin-left: 0.7%;
+                border-radius: 20px;
+                background-color: rgb(92, 59, 172);
+                margin-top: 1.5%;
+                height:45%;
+                width: 3.5%;
+            }
+            .blue_beta{
+                width: 20%;
+                height: 80%;
+                font-family:  sans-serif;
+                margin-left: 16%;
+                margin-top: 2%;
+                text-align: center;
+                color: white;
+                font-size: 12px;
+            }
+            .gap_blue_logo{
+                width: 55%;
+                height: 100%;
+                float: left;
+            }
+            .get_logo{
+                width: 9%;
+                height: 100%;
+                float: left;
+            }
+            .get_logo1{
+                font-family:  sans-serif;
+                font-size: 19px;
+                position: relative;
+                top: 40%;
+                color: white;
+            }
+            .get_logo12{
+                width: 6%;
+                height: 100%;
+                float: left;
+            }
+            .get_logo22{
+                font-family:  sans-serif;
+                font-size: 19px;
+                position: relative;
+                top: 40%;
+                color: white;
+            }
+            .join_logo{
+                width: 5%;
+                height: 100%;
+                float: left;
+                border: 1px solid blue;
+                border-radius: 5px;
+            }
+            .join_1{
+                color: white;
+                font-size: 20px;
+                font-family:  sans-serif;
+                position: relative;
+                bottom: 35%;
+                left: 24%;
+            }
+            #logo_maker_left_block{
+                height: 50%;
+                width: 40%;
+                position: relative;
+                top: 18%;
+                left: 5%;
+            }
+            .logo_left_block_text{
+                height: 25%;
+                width: 100%;
+                color: white;
+                font-family:  sans-serif;
+                font-size: 25px;
+            }
+            .logo_left_block_text1{
+                width: 85%;
+                height: 20%;
+                border-bottom: 1.5px solid white;
+            }
+            .logo_box_button{
+                height: 12%;
+                width: 32%;
+                position: relative;
+                top: 7%;
+                background-color: white;
+                border-radius: 5px;
+            }
+            .box1_text{
+                position: relative;
+                color: rgb(51, 51, 129);
+                font-size: 18px;
+                text-decoration:underline white;
+                left: 15%;
+                top: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bigSlides">
+            <img class="slide" src="https://pbs.twimg.com/media/Etd7QmoXUAE-e2K?format=jpg&name=4096x4096" alt="img1">
+            <img class="slide" src="https://pbs.twimg.com/media/Etd7QmnXYAAvY-p?format=jpg&name=4096x4096" alt="img2">
+            <img class="slide" src="https://pbs.twimg.com/media/Etd7QmqXEAAl49t?format=jpg&name=4096x4096" alt="img3">
+            <img class="slide" src="https://pbs.twimg.com/media/Etd7QmqXMAMNrdx?format=jpg&name=4096x4096" alt="img4">
+        </div>
+        <div id="logo_maker_block">
+            <div id="logo_maker_block1">
+                <div id="logo_maker_fiverr_img"><img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw-1.png" alt="fiverr"></div>
+                <div id="logo_maker_text"><div class="logo_maker_text1"><p>logo maker.</p></div></div>
+                <div class="new_blue_beta"><div class="blue_beta">BETA</div></div>
+                <div class="gap_blue_logo"></div>
+                <a href=""><div class="get_logo"><div class="get_logo1">Go to Fiverr</div></div></a>
+                <a href=""><div class="get_logo12"><div class="get_logo22">Sign in</div></div></a>
+                <a href=""><div class="join_logo"><div class="join_1"><h5>Join</h5></div></div></a>
+            </div>
+            <div id="logo_maker_left_block">
+                <div class="logo_left_block_text"><h1>Make a professional logo in a few clicks</h1></div>
+                <div class="logo_left_block_text1"></div>
+                <a href=""><div class="logo_box_button"><div class="box1_text">Make Your Logo</div></div></a>
+            </div>
+        </div>
+        <script>
+            var myIndex = 0;
+        slideShow();
+
+        function slideShow() {
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(slideShow, 2000); // Change image every 2 seconds
+        }
+        </script>
+    </body>
+</html>
