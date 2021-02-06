@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiverr Business</title>
+    <title>Fiverr Business- Connect Your Team with Freelance Expert</title>
     <style>
         #main{
             width: 100%;
-            height: 120vh;
+            height: 400vh;
+            font-family: sans-serif;
+            color: #0D084D;
         }
         #fiverrBusiness{
             background-color: #0a0757;
             width: 100%;
-            height: 90vh;
+            height: 85vh;
         }
         #fiverrBusiness img{
             /* position: relative; */
@@ -59,8 +61,7 @@
         #partners2{
             display: flex;
             clear: both;
-            border: 1px solid red;
-            margin-top: 17vh;
+            margin-top: 22.5vh;
             height: 10vh;
             width: 100%;
             gap: 5%;
@@ -68,13 +69,154 @@
         }
         #partners2 h3{
             margin: 3.5vh 0px 0px 0px;
-            color: #0D084D;
+            /* color: #0D084D; */
             font-size: 1.2em;
         }
         #partners2  img{
             margin: 1.95vh 1.8vw 0px 1.8vw;
             height: 40px;
         }
+        #catalog{
+            margin-top: 10vh;
+            width: 95%;
+            margin-left: 2%;
+            text-align: center;
+        }
+        #catalog h1{
+            font-size: 28px;
+            /* color: #0D084D; */
+        }
+        #catalog h3{
+            font-size: 16px;
+            font-weight: 200;
+            /* color: #0D084D; */
+        }
+        #catalog img{
+            width: 100%;
+            height: 50vh;
+            margin-left: -10px;
+        }
+        #joinBox1,#joinBox2,#joinBox3{
+            margin: 10vh 0vh 10vh 0vh;
+            width: 100%;
+            height: 45vh;
+            overflow: hidden;
+            
+        }
+        #findTalent1,#findTalent2{
+            
+            margin: 10vh 0vw 0vh 10vw;
+            width: 30%;
+        }
+        #findTalent1,#findTalent2 h1{
+            font-size: 28px;
+        }
+        #findTalent1,#findTalent2 p{
+            font-size: 16px;
+        }
+        #findTalent1 ~img{
+            height: 45vh;
+            margin: -35vh 5vh 0vh 0vh;
+            float: right;
+        }
+        #findTalent2 ~img{            
+            height: 45vh;
+            margin: -35vh 5vh 0vh 0vh;
+            float: right;
+        }
+        button{
+            margin-top: 20px;
+            height: 45px;
+            width: 130px;
+            border-radius: 5px;
+            border:none;
+            color: white;
+            font-weight: 600;
+            background-color: #1dbf73;
+        }
+        #scattered ~img{            
+            height: 45vh;
+        }
+        #scattered{
+            
+            margin: 10vh 15vw 0vh 0vw;
+            width: 30%;
+            float: right;
+        }
+
+        #businessFooter{
+            margin-top: 20%;
+            background-color: #0a0757;
+            width: 100%;
+            height: 50vh;
+        }
+        .bFooter button{
+            width: 50%;
+            font-size: 16px;
+        }
+        .bFooter{
+            padding-top: 10px;
+            margin: auto;
+            margin-top: -10vh;
+            width: 35%;
+            color: white;
+            text-align: center;
+        }
+        .bFooter h1{
+            font-size: 48px;
+        }
+        #terms{
+            width: 50%;
+            margin-top: 8%;
+            display: flex;
+            color: white;
+            gap: 20px;
+        }
+        #terms p{
+            margin-top: 10px;
+        }
+        #ani::before { 
+            content: "teams"; 
+            animation: animate infinite 3s; 
+            padding-left: 10px; 
+        } 
+        @keyframes animate { 
+  
+                0% { 
+                    content: "teams"; 
+                } 
+
+                50% { 
+                    content: "freelancers"; 
+                } 
+
+                75% { 
+                    content: "projects"; 
+                } 
+        } 
+        .copp{
+            font-family: copperplate,"inherit";
+        }
+        #yourTeam{
+            width: 100%;
+            height: 45vh;
+            line-height: 10vh;
+            text-align: center;
+        }
+        #yourTeam h1{
+            font-size: 48px;
+            color: rgb(233, 232, 232);
+        }
+        .hover:hover{
+            font-family: sans-serif;
+            color: #0a0757;
+        }
+        #yourTeam h2{
+            font-size: 28px;
+        }
+        
+
+
     </style>
 </head>
 <body>
@@ -82,7 +224,7 @@
         <div id="fiverrBusiness">
             <img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw-1.png" alt="fiverlogo"><h1>business.</h1>
             <div id="joinBusiness">
-                <h1>Boost your team with <span>exceptional </span> talent</h1>
+                <h1>Boost your team with <span class="copp">exceptional </span> talent</h1>
                 <h4>Set your team up for seccess every time with the help of freelance talent you can count on.</h4>
                 <button>Join Fiverr Business</button><a href="">Take a look inside</a>
             </div>
@@ -101,7 +243,109 @@
                     <img src="https://mahanthihunt.files.wordpress.com/2021/02/logo-myheritage.81af0fd.jpg" alt="myheritage"/>
                 </div>                
             </div>
+            <div id="catalog">
+                <h1>Access a catalog of verified, <br>trusted talent</h1>
+                <h3>Expand your team as needed with experienced freelancers <br>already vetted for business projects.</h3>
+                <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1309,dpr_2.0/v1/attachments/generic_asset/asset/5c7b9db40542ad1221499f7298209ae0-1600019528480/trusted-talent-desktop-1309-x2.png" alt="catalog" >
+            </div>
+
+            <div id="joinBox1">
+                <div id="findTalent1"><h1>Finding the right talent? Leave that to us</h1>
+                <p>A team of Fiverr Business Success Managers is here to help match you with the best talent for your team - no need for endless guessing and interviews.</p>
+            <button>Join Now</button></div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_2.0/v1/attachments/generic_asset/asset/bc05537ddbcae4f68ad0b17659b45dd0-1606732443796/right-talent-desktop-660-x2.png" alt="right lalent">
+            </div>
+            <div id="joinBox2">
+                <div id="scattered"><h1>Turn scattered feedback into productive teamwork</h1>
+                <p>Collaborate with your team, manage projects, and share freelancers - all in one workspace.</p>
+            <button>Join Now</button></div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_2.0/v1/attachments/generic_asset/asset/5364183d1377de2e002df16f78f56ef3-1599950021826/scattered-feedback-desktop-660-x2.png" alt="right lalent">
+            </div>
+            <div id="joinBox3">
+                <div id="findTalent2"><h1>Simplify budgeting and manage with transparency</h1>
+                <p>Skip all the overhead of multiple freelancers, monitor your team's progress, approve transactions, and set budgets with ease.</p>
+            <button>Join Now</button></div>
+            <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_2.0/v1/attachments/generic_asset/asset/5364183d1377de2e002df16f78f56ef3-1599950021839/simplify-budgeting-desktop-660-x2.png" alt="right lalent">
+            </div>
+
+            <!-- <div id="qa">
+                <h1>Common Questions</h1>
+                <div class="dropdown">
+                <button class="dropbtn">Will the freelancer be committed to my business' NDA?
+                </button> -->
+                <!-- <br><div class="content">
+                    <p>Here on Fiverr it's just like working with any other freelancer. You can ask them to sign your NDA or any other legal document your legal department deems necessary. You can also find additional confidentiality obligations of freelancers mandated under Fiverr's Terms of Service.</p>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Is Fiverr Business really offering a year for free?
+                    </button>
+                    <div class="content">
+                        <p>Yes, it's absolutely free! And what's even better? It comes without any conditions committing to use it for the second year. Please note that individual freelancer services ordered through Fiverr must still be paid at their respective prices – just like on Fiverr.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">How is Fiverr Business different from the Fiverr Marketplace?</button>
+                    <div class="content">
+                        <p>Fiverr Business is all about collaboration. Our business tool allows you to organize and manage all your projects, communication, deliveries, and budgeting in one dashboard. You can share a payment method with team members, save and share favorite sellers for quick access, and contact a dedicated Fiverr Business Success Manager to help you find the right sellers.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">How do I know that the freelancer is qualified to complete my project?
+                    </button>
+                    <div class="content">
+                        <p>That's exactly what Fiverr Business has set out to guarantee by designing a unique catalog of exclusively business-relevant, top-tier freelancers. You can browse work samples and reviews first, and if you're still unsure – reach out to a designated Fiverr Business Success Manager to help find you the right match.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">What if I didn't find the exact service that suits my project needs?</button>
+                    <div class="content">
+                        <p>Big projects sometimes make a one-size-fits-all service impossible, which is why Fiverr enables you to contact a seller you're interested in and request a custom order instead. If you still can't find what you're looking for, remember, Fiverr's Business Success Managers are here to help guide and assist you.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">How does Fiverr protect us in the order process?</button>
+                    <div class="content">
+                        <p>Safety is a #1 priority with Fiverr. Not only are we PCI DSS certified, payment on Fiverr is also protected and only released to the freelancers once you've approved the work you've received.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">How do I know the freelancer's hourly rate?
+                    </button>
+                    <div class="content">
+                        <p>Trick question! On Fiverr, you pay freelancers per project, not per hour. The price for the service and everything included is clearly stated in their project proposal.</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">How many team members can join my business account?</button>
+                    <div class="content">
+                        <p>The name of the game is growth, isn't it? Your Fiverr Business account includes the first 50 seats! Need more? Reach out to our customer support and they'll take care of you.</p>
+                    </div> -->
+                <!-- </div>
+            </div> -->
+            <div id="yourTeam">
+                <h2>Now your team really can do it all</h2>
+                <h1><span class="hover">oduct </span><span class="hover">Photography</span><span class="hover"> Web Programming</span> <span class="hover">User Testing</span><span class="hover">Brochure De</span>   <br>
+                    <span class="hover">art</span><span class="hover"> Video Ads</span><span class="hover"> Ux Writing</span><span class="hover"> Translation</span><span class="hover"> Marketing Strategy</span><span class="hover"> Votes</span>   <br>
+                    <span class="hover">og Posts</span><span class="hover"> Photoshop Editing</span><span class="hover"> Whiteboard & Animation Explained</span><br>
+                    <span class="hover">o</span><span class="hover"> Catalog Design</span><span class="hover"> Public Relation</span><span class="hover"> Web Analytics</span><span class="hover"> Web Design</span></h1>
+            </div>
+
+            <div id="businessFooter">
+                <div class="bFooter">
+                    <h1>Manage <span class="copp" id="ani"> </span><br>from anywhere</h1>
+                    <button>Join Fiverr Business</button>
+                </div>
+                <div id="terms">
+                    <h2>fiverr business</h2>
+                <p>Privacy Policy | Terms of Service
+
+                    © Fiverr International Ltd. 2020</p>
+                </div>
+                
+
+            </div>
         </div>
     </div>
 </body>
 </html>
+
