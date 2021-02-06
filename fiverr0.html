@@ -13,11 +13,14 @@
             font-family:  sans-serif;
         }
         #topMenu{
+            position: -webkit-sticky;
+             position: sticky;
+            /* position: fixed;  */
             height: 10vh;
-            gap: 42%;
+            gap: 41%;
             display: flex;
         }
-        #join{
+        #myBt2{
             height: 3.6vh;
             width: 4.6vw;
             font-size: 0.875em;
@@ -46,6 +49,116 @@
             color: white;
             font-weight: 600;
         }
+        .navSelect1{
+            margin: 0px 5px 0px 5px;
+            font-size: 1em;
+            border-style: none;
+            background-color: transparent;
+            color: white;
+            font-weight: 600;
+            width: 60px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        .navSelect2{
+            margin: 0px 5px 0px 5px;
+            font-size: 1em;
+            border-style: none;
+            background-color: transparent;
+            color: white;
+            font-weight: 600;
+            width: 55px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+        }
+        .inr{
+            color: gray;
+            /* width: 100px; */
+            
+        }
+        /*mahis login page ======================================*/
+        .outdoor {
+     margin: 10px;
+     width: 80%;
+     height: 30px;
+     border-radius: 10px;
+     margin-left: 15px;
+ }
+ #FB,#FB2{
+     background-color:  #3b5998 ;
+     color: white;
+     font-weight: 500;
+ }
+ #continue1,#continue2{
+     background-color: #1dbf73;
+     color: white;
+     font-weight: 500;
+ }
+ #myBtn1{
+     border: none;
+     background-color: transparent;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ 
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 40px;
+     left: 0;
+     top: 0;
+     width: 35%;
+     height: 100%;
+     overflow-y: unset;
+     background-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 0);
+     opacity: 0.8;
+     margin: auto;
+     margin-left: 35%;
+ }
+ /* Modal Content */
+ 
+ .modal-content {
+     background-color: #fefefe;
+     margin: auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+ }
+ /* The Close Button */
+ 
+ .close {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ .clos {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+ 
+ .clos:hover,
+ .clos:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
+        /* mahanthis slide show */
         #bigSlide{
             max-width: 100%;
         }
@@ -68,14 +181,14 @@
         #searchButton{
             margin: 0px 0px 2.29vh 0px;
             width: 82%;
-            height: 5.17vh;
+            height: 5.37vh;
             font-size: 1em;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             border-style: none;
         }
         #buttonSearch{
-            margin: 0px 0px 2.29vh 0px;
+            margin: 0px 0px 2.29vh -5px;
             width: 16%;
             height: 5.65vh;
             color: white;
@@ -140,8 +253,9 @@
             height: 6.8vh;
         }       
         
-        /* mangesh  testimonials*/
+        /* mangesh  testimonials==============================================================================*/
         .Part6{
+            font-family: copperplate,"inherit";
             width: 99%;
             height: 50vh;
             position: relative;
@@ -185,7 +299,7 @@
             margin: auto;
             font-size: 200%;
             font-weight: bold;
-            font-family: inherit;
+            /* font-family: inherit; */
             line-height: inherit;
         }
         .Part6 > button {
@@ -195,7 +309,7 @@
 		 	/* font-size: 20px; */
 		 	color: gray;
 		 	position: absolute;
-		 	top:40%;
+		 	top:35%;
 		 	cursor: pointer;
 		 }
 
@@ -567,7 +681,7 @@
             .blue_line3_1{
                 height: 12%;
                 width: 32%;
-                font-family: copperplate;
+                font-family: copperplate,"inherit";
                 float: left;
                 position: relative;
                 font-size: 19px;
@@ -601,7 +715,7 @@
               left: 4%;
               bottom: 10%;
             }
-            .explore_button{
+            /* .explore_button{
                 width: 50%;
                 height: 15%;
             }
@@ -609,19 +723,19 @@
                 height: 55%;
                 width: 80%;
                 margin-top: 9%;
-                background-color: rgb(8, 209, 115);
                 border: 1px solid  rgb(8, 209, 115);
                 border-radius: 5px;
-            }
-            .explore_text{
-                height: 35%;
-                width: 85%;
-                margin: auto;
-                margin-top: 5%;
+            } */
+            #explore{
+                background-color: rgb(8, 209, 115);
+                height: 50px;
+                width: 300px;
+                font-size: 16px;
+                font-weight: 600;
+                border: none;
+                border-radius: 3px;
                 color: white;
-                text-align: center;
-                font-size: 18px;
-                font-family:  sans-serif;
+
             }
          /* Logo maker ==============================*/
          #logoMaker{
@@ -942,6 +1056,10 @@
             /* border: 1px solid silver; */
             transition: 0.3s;
         }
+        #copper,#copper1,#copper2,#copper3,#copper4{
+            font-family: copperplate;
+            font-family: "inherit";
+        }
         .media-symbol >a> i:hover {
             background: cornflowerblue;
         }
@@ -966,13 +1084,82 @@
         <div id="topMenu">
             <div><a href="file:///C:/Users/Mahanthi/code/project/nav_bar/top.html" title="Go to home"> <img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw.png" alt="fiver"/></a></div>
             <div>
-                <a href="C:\Users\Mahanthi\code\project\nav_bar\fiverrbusiness.html" title="Fiverr Buisness">Fiverr Buisness</a>
+                <a href="C:\Users\Mahanthi\code\project_kaveri\fiverrbusiness.html" title="Fiverr Buisness">Fiverr Buisness</a>
                 <button class="navBar">Explore</button>
-                <button class="navBar">🌐 English</button>
-                <button class="navBar">₹INR</button>
-                <a href="" title="Become a Seller">Become a Seller</a>
-                <a href="" title="Sign In">Sign In</a>
-                <a href="" title="Join"><button id="join"><b>Join</b></button></a>
+                <select name="lang" class="navSelect1">
+                    <option class="inr" value="">English</option>
+                    <option class="inr" value="">Deutsch</option>
+                    <option class="inr" value="">Espanol</option>
+                    <option class="inr" value="">Francais</option>
+                    <option class="inr" value="">Portugues</option>
+                    <option class="inr" value="">Italiano</option>
+                    <option class="inr" value="">Nederlands</option>
+
+                </select>
+                <select name="currency" class="navSelect2">
+                    <option class="inr" value="1">(USD)$</option>
+                    <option class="inr" value="2">(EUR)€</option>
+                    <option class="inr" value="3">(GBP)2</option>        
+                    <option class="inr" value="4">(AUD)A$</option>
+                    <option class="inr" value="5">(CAD)C$</option>
+                    <option class="inr" value="6">(ILS)rw</option>
+                    <option class="inr" value="7">(BRL)R$</option>
+                    <option class="inr" value="8">(HKD)HK$</option>
+                    <option class="inr" value="9">(SEK)kr</option>
+                    <option class="inr" value="10">(NZD)NZ$</option>
+                    <option class="inr" value="11">(SGD)S$</option>
+                    <option class="inr" value="12">(CHF)CHF</option>
+                    <option class="inr" value="13">(ZAR)R</option>
+                    <option class="inr" value="14">(CNY)v</option>
+                    <option class="inr" value="15">(INR)₹</option>
+                    <option class="inr" value="16">(MYR)RM</option>
+                    <option class="inr" value="17">(MXN)$</option>
+                    <option class="inr" value="18">(PKR)Rs</option>
+                    <option class="inr" value="19">(PHP)P</option>
+                    <option class="inr" value="20">(TWD)$</option>
+                    <option class="inr" value="21">(THB)B</option>
+                    <option class="inr" value="22">(TRY)t</option>
+                    <option class="inr" value="23">(RED)</option>
+                </select>               
+                 <a href="" title="Become a Seller">Become a Seller</a>
+                <button id="myBtn1">Sign In</button>
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Sign in to Fiverr</h3>
+                        <button  class="outdoor" id="FB">Continue with Facebook</button></br>
+                        <button class="outdoor">Continue with Google</button></br>
+                        <button class="outdoor" >Continue with Apple</button>
+                        <p>-----------------------or--------------------------</p>
+                        <input class="outdoor inp" type="email" value="Email/Username" /><br />
+                        <input class="outdoor inp" type="text" value="Password" />
+                        <button class="outdoor" id="continue1">Continue</button><br />
+                        <input type="checkbox" value="Remember Me">Remember Me
+                        <a href="https://www.fiverr.com/">
+                            <p>Forgot Password?</p>
+                        </a>
+                        <p>Not a member yet?<a href="https://www.fiverr.com/">Sign In</a></p>
+                    </div>
+
+                </div>
+                <button id="myBt2">Join</button>
+                <div id="myModa2" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="clos">&times;</span>
+                        <h3>Join Fiverr</h3>
+                        <button class="outdoor" id="FB2">Continue with Facebook</button></br>
+                        <button class="outdoor">Continue with Google</button></br>
+                        <button class="outdoor">Continue with Apple</button>
+                        <p>-----------------------or--------------------------</p>
+                        <input class="outdoor inp" type="email" value="Email/Username" /><br />
+                        <button class="outdoor" id="continue2">Continue</button><br />
+                        <p>Already a member?</p>
+                        <a href="https://www.fiverr.com/">Sign In</a>
+                    </div>
+
+                </div>
             </div>
         </div>
                 <!--mahanthi's Slide show of images -->
@@ -986,7 +1173,7 @@
                 <!--mahanthi's image over search bar -->
         <div id="search">
             <h1>Find the perfect  
-                <span style="font-family: copperplate;">freelance</span>
+                <span id="copper">freelance</span>
                 <br> service for your business</h1>
             <label for="searchButton" ></label>
             <input type="text" name="search" id="searchButton" placeholder=" 🔍Try building mobile app">
@@ -1173,11 +1360,7 @@
                             <p class="gapp1"><i class="fa fa-check-circle" aria-hidden="true"></i>    Manage teamwork and boost productivity with one powerful </p>
                             <p class="gapp2">workspace</p>
                         </div>
-                        <div class="explore_button">
-                            <div class="explore_button_inside">
-                                <div class="explore_text">Explore Fiverr Business</div>
-                            </div>
-                        </div>
+                                <a href="C:\Users\Mahanthi\code\project_kaveri\fiverrbusiness.html"><button id="explore">Explore Fiver Business</button></a>
                     </div>
                 </div>
                 <div>
@@ -1202,16 +1385,62 @@
                     <i>"When you want to create a business bigger than yourself, you need a lot of help. That's what Fiverr does."</i>
                 </div>
             </div>
-            <button class="previous" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="next" onclick="plusDivs(1)">&#10095;</button>
-    </div>
+    
+    
+            <div class="Part_6" class="b">
+            
+                <div class="Part_6_video">
+                        <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg" width="100%" height="100%">
+                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/rb8jtakrisiz0xtsffwi" video="web/mp4">
+                        </video>
+                </div>
+                <div class="Part_6_content">
+                    <h5>Brighid Gannon (DNP, PMHNP-BC), Co-Founder <span style="margin-left: 3vh;">|</span>
+                        <span"><img style="width: 10vw; height: 8vh; margin-top: -2vh; margin-left: 3vh;" src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/lavender-logo-x2.89c5e2e.png" alt="Company logo"></span>
+                    </h5>
+                    <i>"We used Fiverr for SEO, our logo, website, copy, animated videos — literally everything. It was like working with a human right next to you versus being across the world."</i>
+                </div>
+            </div>
+    
+    
+            <div class="Part_6" class="c">
+            
+                <div class="Part_6_video">
+                        <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg" width="100%" height="100%">
+                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/plfa6gdjihpdvr10rchl" video="web/mp4">
+                        </video>
+                </div>
+                <div class="Part_6_content">
+                    <h5>Caitlin Tormey, Chief Commercial Officer <span style="margin-left: 3vh;">|</span>
+                        <span"><img style="width: 10vw; height: 8vh; margin-top: -2vh; margin-left: 3vh;" src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/naadam-logo-x2.0a3b198.png" alt="Company logo"></span>
+                    </h5>
+                    <i>"We've used Fiverr for Shopify web development, graphic design, and backend web development. Working with Fiverr makes my job a little easier every day."</i>
+                </div>
+            </div>
+            <div class="Part_6">
+            
+                <div class="Part_6_video" class="d">
+                        <video controls= "play/stop" poster="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173399/testimonial-video-still-rooted.jpg" width="100%" height="100%">
+                            <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/yja2ld5fnolhsixj3xxw" video="web/mp4">
+                        </video>
+                </div>
+                <div class="Part_6_content">
+                    <h5>Kay Kim, Co-Founder <span style="margin-left: 3vh;">|</span>
+                        <span"><img style="width: 10vw; height: 8vh; margin-top: -2vh; margin-left: 3vh;" src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/rooted-logo-x2.321d79d.png" alt="Company logo"></span>
+                    </h5>
+                    <i>"It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."</i>
+                </div>
+            </div>
+                <button class="previous" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="next" onclick="plusDivs(1)">&#10095;</button>
+        </div>
 
         <!--mahanthi's logo maker -->
         <div id="logoMaker">
             <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_2.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png" alt="logo maker">
             <div id="fiverrLogo"><img src="https://mahanthihunt.files.wordpress.com/2021/02/fiverrw-1.png" alt="fiverr">
             <h3 class="fiverrLogoMaker">logo maker.<span style="background-color: white;border-radius: 20px;width: 580px;color:#3F63C8;font-size: 15px;padding:0px 5px 0px 5px;">BETA</span></h3>
-            <h1>Make an incredible logo<br><span style="font-family: copperplate;">in minutes</span></h1>
+            <h1>Make an incredible logo<br><span id="copper2">in minutes</span></h1>
             <p>Pre-designed by top talented. Just add your touch.</p>
             <button><b>Try Fiverr Logo Maker</b></button></div>
         </div>
@@ -1280,9 +1509,10 @@
         <!--mahanthi's get started -->
         <div id="getStarted">
             <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_2.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608129/bg-signup-1400-x2.png" alt="get started">
-            <div class="getStarted"><h1>Find the <span style="font-family: copperplate;">talent</span> needed to get your business <span style="font-family: copperplate;">growing.</span></h1>
+            <div class="getStarted"><h1>Find the <span id="copper3">talent</span> needed to get your business <span id="copper4">growing.</span></h1>
             <button><b>Get Started</b></button></div>
         </div>
+        
         
 
         <!--mangesh Footer page ============================ -->
@@ -1406,6 +1636,75 @@
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
             setTimeout(slideShow, 2000); // Change image every 2 seconds
+        }
+        // mahimas script for login page
+        var modal = document.getElementById("myModal1");
+
+
+        var btn = document.getElementById("myBtn1");
+
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        var mod = document.getElementById("myModa2");
+
+
+        var bt = document.getElementById("myBt2");
+
+
+        var spane = document.getElementsByClassName("clos")[0];
+
+
+        bt.onclick = function() {
+            mod.style.display = "block";
+        }
+
+
+        spane.onclick = function() {
+            mod.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == mod) {
+                mod.style.display = "none";
+            }
+        }
+
+        // <!-- mangeshes script for testimonials -->
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("Part_6");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "flex";  
         }
         
         // mahimas script====================================
